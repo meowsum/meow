@@ -2,53 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Press+Start+2P&display=swap');
 
 body {
-	background-color: #4a3f44;
-	text-align: center;
-	font-family: 'Jua';
-	color: #ffdcf7;
+  background-color: #4a3f44;
+  text-align: center;
+  font-family: 'Jua';
+  color: #ffdcf7;
 }
 
 ::selection {
-	background-color: #ffdcf7;
-	color: #4a3f44;
+  background-color: #ffdcf7;
+  color: #4a3f44;
 }
 
 h1 {
-	font-size: 3.3rem;
-	height: 3rem;
+  font-size: 3.3rem;
+  height: 3rem;
 }
 
 hr {
-	border-style: none;
-	border-top: dotted #5c5156;
-	border-width: 0.75rem;
-	width: 15rem;
+  border-style: none;
+  border-top: dotted #5c5156;
+  border-width: 0.75rem;
+  width: 15rem;
 }
 
 img {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .footer-link {
-	color: #94878d;
-	padding: 0.25rem;
-	text-decoration: none;
+  color: #94878d;
+  padding: 0.25rem;
+  text-decoration: none;
 }
 
 .footer-link:hover {
-	color: #ffdcf7;
-	font-weight: 500;
+  color: #ffdcf7;
+  font-weight: 500;
 }
 
 .heart {
-	color: #955a6f;
-	font-size: 1.5rem;
-	opacity: 65%;
-	padding: 0.75rem;
+  color: #955a6f;
+  font-size: 1.5rem;
+  opacity: 65%;
+  padding: 0.75rem;
 }
 
 .bottom-container {
-	position: absolute;
-	bottom: 6.5rem;
-	width: 100%;
+  position: absolute;
+  bottom: 6.5rem;
+  width: 100%;
 }
