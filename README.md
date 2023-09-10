@@ -1,2 +1,2 @@
 # tatsu
-[Click Here](https://tatsuwuki.com) ;3
+[Click](https://tatsuwuki.com) ;3
