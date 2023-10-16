@@ -64,7 +64,6 @@ hr {
 	font-family: inherit;
 	color: #ffdcf7;
 	background-color: #383034;
-	cursor: default !important;
 	transition: border-color .25s;
 	outline: none!important;
 	margin-right: 10px;
@@ -72,8 +71,6 @@ hr {
 
 button:hover {
 	border-color: #ffdcf7;
-	cursor: default !important;
-	cursor: default;
 }
 
 button:active {
