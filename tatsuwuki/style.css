@@ -1,11 +1,30 @@
+/* CSS is my doom. */
+
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Press+Start+2P&display=swap');
 
-body {
-  background-color: #4a3f44;
-  text-align: center;
+:root {
   font-family: 'Jua';
+  line-height: 1.5;
+  color-scheme: light dark;
   color: #ffdcf7;
+  background-color: #4a3f44;
+  font-synthesis: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+	cursor: url("bunni.png"), auto !important;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 ::selection {
@@ -14,41 +33,76 @@ body {
 }
 
 h1 {
-  font-size: 3.3rem;
-  height: 3rem;
+  text-align: center;
+  font-size: 3.4em;
+  line-height: 1.1;
+  margin: 20px;
+}
+
+img {
+  width: 300px;
+  border-radius: 100%;
 }
 
 hr {
   border-style: none;
   border-top: dotted #5c5156;
-  border-width: 0.75rem;
-  width: 15rem;
+  border-width: 20px;
+  width: 350px;
+	margin-bottom: 35px;
 }
 
-img {
-  border-radius: 50%;
+.button-container {
+  display: flex;
 }
 
-.footer-link {
-  color: #94878d;
-  padding: 0.25rem;
-  text-decoration: none;
+.button {
+	border-radius: 100px; /* Don't ask why this is 100px qwq*/
+	border: 1px solid transparent;
+	padding: .6em 1.2em;
+	font-size: 1.5em;
+	font-family: inherit;
+	color: #ffdcf7;
+	background-color: #383034;
+	cursor: default !important;
+	transition: border-color .25s;
+	outline: none!important;
+	margin-right: 10px;
 }
 
-.footer-link:hover {
-  color: #ffdcf7;
-  font-weight: 500;
+button:hover {
+	border-color: #ffdcf7;
+	cursor: default !important;
+	cursor: default;
 }
 
-.heart {
-  color: #955a6f;
-  font-size: 1.5rem;
-  opacity: 65%;
-  padding: 0.75rem;
+button:active {
+	color: #383034;
+	background-color: #ffdcf7;
+	transition: none;
 }
 
-.bottom-container {
-  position: absolute;
-  bottom: 6.5rem;
-  width: 100%;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position:absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
